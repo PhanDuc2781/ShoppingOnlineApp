@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_cardview"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/code_OrderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cambriab"
+        android:text="ORDER : 123456"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/name_StoreOrderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_OrderUser"
+        android:fontFamily="@font/cambriab"
+        android:text="Name Store : "
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/total_BillOrderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_StoreOrderUser"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cambriab"
+        android:text="Tổng tiền:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/status_OrderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cambriab"
+        android:text="Chờ xác nhận"
+        android:textColor="#FF5722" />
+
+    <TextView
+        android:id="@+id/date_OrderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_BillOrderUser"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/cambriab"
+        android:text="Ngày đặt : 20/11/2020"
+        android:textSize="18dp" />
+
+
+
+</RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

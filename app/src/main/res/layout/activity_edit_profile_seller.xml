@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.EditProfileSellerActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cambriab"
+            android:gravity="center"
+            android:text="Chỉnh sửa hồ sơ ! "
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/back_EditSellerProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_ImageSellerEdit"
+            android:src="@drawable/profile"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"/>
+
+        <EditText
+            android:id="@+id/name_ShopEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Tên Shop"
+            android:drawableLeft="@drawable/ic_shop"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/email_EditSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Tài khoản Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/phone_EditSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Số Điện Thoại"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/address_ShopEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/cambriab"
+                android:hint="Địa Chỉ Shop"
+                android:drawableLeft="@drawable/ic_address"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:minHeight="48dp"
+                android:textColor="#000" />
+            <ImageView
+                android:id="@+id/editSeller_gps"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_address" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fee_DeliverEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1.7"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Phí Giao Hàng"
+            android:drawableLeft="@drawable/ic_money"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <Button
+            android:id="@+id/update_EditSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:fontFamily="@font/cambriab"
+            android:background="@drawable/bg_button"
+            android:layout_margin="10dp"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

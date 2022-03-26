@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.AddProductsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_activity">
+
+        <ImageView
+            android:id="@+id/back_MainSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Sản Phẩm"
+            android:fontFamily="@font/cambriab"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_AddProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_cart"
+            app:civ_border_color="#686363"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edt_NameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:fontFamily="@font/cambriab"
+            android:textColor="#000"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/ic_tilte"
+            android:hint="Tên Sản Phẩm"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/edt_DescriptionProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:drawableLeft="@drawable/ic_tilte"
+            android:hint="Giới Thiệu"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txt_CategoryProduct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/cambriab"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/ic_category"
+            android:drawableRight="@drawable/ic_drop"
+            android:hint="Loại Sản Phẩm" />
+
+        <EditText
+            android:id="@+id/edt_QuantityProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:drawableLeft="@drawable/ic_quantity"
+            android:hint="Số Lượng e.g , kg , etc."
+            android:padding="10dp"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edt_PriceProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:drawableLeft="@drawable/ic_money"
+            android:hint="Giá Sản Phẩm"
+            android:minHeight="48dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/discount_Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/cambriab"
+            android:minHeight="48dp"
+            android:textSize="18dp"
+            android:text="Giảm Giá"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/edt_DiscountPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:drawableLeft="@drawable/ic_money"
+            android:hint="Giá Sồ Tiền"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/edt_DiscountNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:drawableLeft="@drawable/ic_money"
+            android:hint="SaleOff %"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btn_AddNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Sản Phẩm"
+            android:background="@drawable/bg_button"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cambriab"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

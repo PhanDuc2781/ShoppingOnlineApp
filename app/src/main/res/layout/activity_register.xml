@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_ImageRegister"
+            android:src="@drawable/profile"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"/>
+
+        <EditText
+            android:id="@+id/name_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Họ và Tên"
+            android:drawableLeft="@drawable/ic_person"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/email_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Tài khoản Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/phone_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Số Điện Thoại"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/address_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/cambriab"
+                android:hint="Địa Chỉ Nhà"
+                android:drawableLeft="@drawable/ic_address"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:minHeight="48dp"
+                android:textColor="#000" />
+            <ImageView
+                android:id="@+id/register_gps"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_address" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/pass_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Mật Khẩu"
+            android:drawableLeft="@drawable/ic_key"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/rePass_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:fontFamily="@font/cambriab"
+            android:hint="Nhập Lại Mật Khẩu"
+            android:drawableLeft="@drawable/ic_key"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:textColor="#000" />
+        <Button
+            android:id="@+id/btn_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/cambriab"
+            android:textColor="@color/black"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/txt_AlreadyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản . ĐĂNG NHẬP"
+            android:fontFamily="@font/cambriab"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txt_SellerRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký Người Bán ."
+            android:fontFamily="@font/cambriab"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

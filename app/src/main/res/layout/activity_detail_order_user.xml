@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DetailOrderUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_activity"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết đơn hàng."
+            android:textSize="22dp"
+            android:fontFamily="@font/cambriab"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/back_OrderedRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_cardview"
+    android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã đơn hàng"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/item_OrderedId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OrderId"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="20dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày mua            "
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/item_DateOrdered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái          "
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/item_StatusOrdered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cửa hàng         "
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/item_OrderedNameShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ShopName"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/item_OrderedAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/item_TotalBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cambriab"
+        android:layout_gravity="center"
+        android:textColor="#FF5722"
+        android:textSize="17dp"
+        android:text="Chi tiết các sản phẩm"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_ItemOrderd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_ordered_user"/>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

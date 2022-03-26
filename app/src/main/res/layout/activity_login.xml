@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/email_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edit"
+        android:fontFamily="@font/cambriab"
+        android:hint="Tài khoản Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:minHeight="48dp"
+        android:textColor="#000" />
+    <EditText
+        android:id="@+id/pass_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edit"
+        android:fontFamily="@font/cambriab"
+        android:hint="Mật Khẩu"
+        android:drawableLeft="@drawable/ic_key"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:minHeight="48dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/txt_ForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu ?"
+        android:fontFamily="@font/cambriab"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:gravity="right"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/black"
+        android:textSize="19dp"/>
+    <TextView
+        android:id="@+id/txt_NoAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản . ĐĂNG KÝ"
+        android:fontFamily="@font/cambriab"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+
+
+
+</LinearLayout>

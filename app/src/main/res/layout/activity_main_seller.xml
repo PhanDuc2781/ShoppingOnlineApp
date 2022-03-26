@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainSellerActivity">
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_activity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_Seller"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_shop" />
+
+        <TextView
+            android:id="@+id/txt_NameSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_Seller"
+            android:fontFamily="@font/cambriab"
+            android:text="Name"
+            android:textSize="19dp" />
+
+
+        <TextView
+            android:id="@+id/email_Seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_NameSeller"
+            android:layout_toRightOf="@+id/image_Seller"
+            android:fontFamily="@font/cambriab"
+            android:text="Email"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/phone_Seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_Seller"
+            android:layout_toRightOf="@+id/image_Seller"
+            android:fontFamily="@font/cambriab"
+            android:text="Phone"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/logOutSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_logout" />
+
+        <ImageView
+            android:id="@+id/add_CartSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/edit_ProfileSeller"
+            android:src="@drawable/ic_cart" />
+
+        <ImageView
+            android:id="@+id/edit_ProfileSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/logOutSeller"
+            android:src="@drawable/ic_edit" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_Seller"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_tab1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab_ProductsSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab2"
+            android:fontFamily="@font/cambriab"
+            android:gravity="center"
+            android:text="Sản Phẩm"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tab_OrdersSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cambriab"
+            android:gravity="center"
+            android:text="Đơn Hàng"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_Products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile">
+
+        <EditText
+            android:id="@+id/edt_SearchProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:padding="4dp"
+            android:fontFamily="@font/cambriab"
+           android:layout_margin="5dp"
+            android:hint="Tìm kiếm..."
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp" />
+        <ImageView
+            android:id="@+id/filer_CategoryProduct"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_category_pro" />
+        <TextView
+            android:id="@+id/all_Product"
+            android:layout_below="@+id/edt_SearchProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Tất cả"
+            android:fontFamily="@font/cambriab"
+            android:textColor="#000"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/all_Product">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_ProductSeller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"/>
+        </ScrollView>
+    </RelativeLayout>
+
+//Rel ORDER
+
+    <RelativeLayout
+        android:id="@+id/rel_Orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile">
+
+        <EditText
+            android:id="@+id/edt_SearchOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/cambriab"
+            android:hint="Tìm kiếm..."
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <ImageView
+            android:id="@+id/filer_Order" android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_category_pro" />
+
+        <TextView
+            android:id="@+id/all_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_SearchOrder"
+            android:fontFamily="@font/cambriab"
+            android:layout_margin="3dp"
+            android:text="Tất cả"
+            android:textColor="#000" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/all_Order">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_OrderSeller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"/>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
